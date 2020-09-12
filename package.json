@@ -1,5 +1,5 @@
 {
-  "name": "ps-api",
+  "name": "pswrapper",
   "version": "1.0.0",
   "description": "An api wrapper for https://playerservers.com",
   "main": "./dist/index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JeroenoBoy/PS-API.git"
+    "url": "git+https://github.com/JeroenoBoy/PSWrapper.git"
   },
   "keywords": [
     "Cubedcraft",
@@ -33,7 +33,7 @@
   "author": "Jeroeno_Boy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JeroenoBoy/PS-API/issues"
+    "url": "https://github.com/JeroenoBoy/PSWrapper/issues"
   },
-  "homepage": "https://github.com/JeroenoBoy/PS-API#readme"
+  "homepage": "https://github.com/JeroenoBoy/PSWrapperI#readme"
 }
