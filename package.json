@@ -1,0 +1,39 @@
+{
+  "name": "ps-api",
+  "version": "1.0.0",
+  "description": "An api wrapper for https://playerservers.com",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./dist/",
+    "build": "tsc -b",
+    "dev": "nodemon ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeroenoBoy/PS-API.git"
+  },
+  "keywords": [
+    "Cubedcraft",
+    "api",
+    "js",
+    "node",
+    "ts",
+    "typescript",
+    "javascript",
+    "playerservers",
+    "ps"
+  ],
+  "author": "Jeroeno_Boy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeroenoBoy/PS-API/issues"
+  },
+  "homepage": "https://github.com/JeroenoBoy/PS-API#readme"
+}
