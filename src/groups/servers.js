@@ -59,7 +59,7 @@ module.exports = {
 	},
 
 	/**
-	 * Get the data of a server by its id
+	 * Get the data of a server by its name or id
 	 * @param {string} NameOrID name or id of the server
 	 */
 	get: async (NameOrID) => {
@@ -69,7 +69,7 @@ module.exports = {
 	},
 
 	/**
-	 * Get all of the retrieved data
+	 * Get the data of all online servers
 	 */
 	all: async () => {
 		return await retrieveData();
