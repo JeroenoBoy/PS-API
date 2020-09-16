@@ -1,5 +1,6 @@
 module.exports = {
 
 	getPlayerCount: require('./requests/getPlayerCount'),
-	onlineServers: require('./classes/OnlineServers'),
+	servers: require('./groups/servers'),
+	players: require('./groups/players'),
 };

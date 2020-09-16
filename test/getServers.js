@@ -1,7 +1,7 @@
 const PSWrapper = require('../src/index');
 
 async function run() {
-	const servers = PSWrapper.onlineServers;
+	const servers = PSWrapper.servers;
 
 	//	Get online servers
 	console.log('Online servers:', await servers.count());

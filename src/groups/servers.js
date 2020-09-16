@@ -41,8 +41,26 @@ module.exports = {
 	},
 
 	/**
+	 * Get top server by votes
+	 */
+	getTopVoted: async () => {
+		const { servers } = await retrieveData('/servers/topvoted');
+
+		return servers[0];
+	},
+
+	/**
+	 * Get top server by boosters
+	 */
+	getTopBoosted: async () => {
+		const { servers } = await retrieveData('/servers/topboosted');
+
+		return servers[0];
+	},
+
+	/**
 	 * Get the data of a server by its id
-	 * @param NameOrID name or id of the server
+	 * @param {string} NameOrID name or id of the server
 	 */
 	get: async (NameOrID) => {
 		const data = await retrieveData('/server/' + encodeURI(NameOrID));
