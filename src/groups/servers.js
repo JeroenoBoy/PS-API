@@ -6,8 +6,8 @@ module.exports = {
 	 * Amount of servers online
 	 */
 	count: async () => {
-		const { serversCount } = await retrieveData();
-		return serversCount;
+		const { server_count  } = await retrieveData();
+		return server_count;
 	},
 
 	/**
