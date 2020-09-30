@@ -59,7 +59,7 @@ method: `GET https://api.playerservers.com/players/{uuid}/warzone` <br/>
 Description: Get the Warzone stats of a player. <br/>
 Example:
 ```
-const player = await PSWrapper.players.getWarzoneStat.('41043b4c-37f7-483e-b8e5-8131655289ca');
+const player = await PSWrapper.players.getWarzoneStat('41043b4c-37f7-483e-b8e5-8131655289ca');
 
 console.log('Wool destroyed: ' + player.wool);
 ```
@@ -74,7 +74,7 @@ method: `GET https://api.playerservers.com/players/{uuid}/tntwars` <br/>
 Description: Get the TNTWars stats of a player. <br/>
 Example:
 ```
-const player = await PSWrapper.players.getTntwarsStats.('41043b4c-37f7-483e-b8e5-8131655289ca');
+const player = await PSWrapper.players.getTntwarsStats('41043b4c-37f7-483e-b8e5-8131655289ca');
 
 console.log('Kills: ' + player.kills);
 ```
@@ -89,7 +89,7 @@ method: `GET https://api.playerservers.com/players/{uuid}/bedwars` <br/>
 Description: Get the Bedwars stats of a player. <br/>
 Example:
 ```
-const player = await PSWrapper.players.getBedwarsStats.('41043b4c-37f7-483e-b8e5-8131655289ca');
+const player = await PSWrapper.players.getBedwarsStats('41043b4c-37f7-483e-b8e5-8131655289ca');
 
 console.log('Beds destroyed: ' + player.beds);
 ```
