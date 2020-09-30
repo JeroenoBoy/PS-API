@@ -6,18 +6,18 @@ An api wrapper for https://playerservers.com
 
 ## Contents
 * [General info](#general-info)
-* [API Refferences](#api-refferences)
+* [API References](#api-references)
 
 
 
 
 ## General Info
-This project is made to simplify the cubedAPI for nodejs.
+This project is made to simplify the CubedCraft API for NodeJS.
 
 
 
 
-## API Refferences
+## API References
 
 ## Requests
 
