@@ -6,7 +6,7 @@ An api wrapper for https://playerservers.com
 
 ## Contents
 * [General info](#general-info)
-* [API References](#api-refferences)
+* [API References](#api-references)
 
 
 
