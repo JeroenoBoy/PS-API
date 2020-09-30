@@ -6,8 +6,8 @@ module.exports = {
 	 * Amount of servers online
 	 */
 	count: async () => {
-		const { server_count } = await retrieveData();
-		return server_count;
+		const { serversCount } = await retrieveData();
+		return serversCount;
 	},
 
 	/**
@@ -50,20 +50,31 @@ module.exports = {
 	},
 
 	/**
-	 * Get top server by boosters
+	 * Get top boosted servers.
+	 * @param {number} queryAmount amount of servers to query.
 	 */
-	getTopBoosted: async () => {
-		const { servers } = await retrieveData('/servers/topboosted');
+	getTopBoosted: async (queryAmount) => {
 
-		return servers[0];
+		// fuck it just return an empty list.
+		if(!queryAmount) return [];
+
+		const { servers } = await retrieveData('/servers/topboosted');
+		let serversArr = [];
+
+		for(let i = 0; i < queryAmount; i++) {
+			if(servers[i]) serversArr.push(servers[i]);
+			else serversArr.push('No server.');
+		}
+
+		return serversArr;
 	},
 
 	/**
 	 * Get the data of a server by its name or id
-	 * @param {string} NameOrID name or id of the server
+	 * @param {string} identifier name or id of the server
 	 */
-	get: async (NameOrID) => {
-		const data = await retrieveData('/server/' + encodeURI(NameOrID));
+	get: async (identifier) => {
+		const data = await retrieveData('/server/' + encodeURI(identifier));
 
 		return data.server;
 	},
@@ -75,7 +86,6 @@ module.exports = {
 		return await retrieveData();
 	},
 };
-
 
 async function retrieveData(method = '/servers') {
 	const res = await fetch('http://api.playerservers.com' + method)

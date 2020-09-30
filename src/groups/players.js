@@ -46,7 +46,6 @@ module.exports = {
 	},
 };
 
-
 async function retrieveData(method = '') {
 	const res = await fetch('http://api.playerservers.com/player/' + method)
 		.catch((err) => {throw err;});
